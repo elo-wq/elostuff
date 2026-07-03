@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pile d'images</title>
+<h1> LINZ </h1>
+<p> september 1 - january 31</p>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    background:#f2f2f2;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px;
+}
+
+#pile{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap:25px;
+    width:100%;
+    max-width:1000px;
+}
+
+#pile img{
+    width:100%;
+    height:auto;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+    cursor:pointer;
+    user-select:none;
+    transition:0.3s;
+}
+
+#pile img:hover{
+    transform: scale(1.05);
+}
+</style>
+
+</head>
+<body>
+
+<div id="pile">
+    <img src="1.jpeg">
+    <img src="2.jpeg">
+    <img src="3.png">
+    <img src="4.jpeg">
+   
+      <img src="5.jpeg">
+        <img src="6.jpeg">
+     <img src="9.jpeg">
+  
+   
+    <img src="7.jpeg">
+    <img src="8.jpeg">
+   
+    <img src="10.png">
+      <img src="11.png">
+</div>
+
+<p>cooking apple pie, walking before the night, watch movie and queer culture </p>
+</body>
+</html>
